@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <h1>Time Sheet</h1>
+
+    <!-- The Table -->
+    <div class="container">
+      <table class="table table-striped">
+        <thead>
+
+          <!---------------------- TABLE HEADER ROW ------------------->
+          <tr class="table-header">
+            <th scope="col">Day</th>
+            <th scope="col">Starting Time</th>
+            <th scope="col">Ending Time</th>
+            <th scope="col">Break Deduction</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!---------------------- MONDAY ROW ------------------->
+          <tr>
+            <th scope="row">Monday</th>
+            <td>  
+              <input type="time" max="5:00" max="23:00" id="mon-start-time">
+            </td>
+            <td>  
+              <input type="time" max="5:00" max="23:00" id="mon-end-time">
+            </td>
+            <td>
+              <div class="break-container">
+                <div class="hour-input-container">
+                  <input class="form-control" type="number" value="00" id="mon-break-hour">
+                </div>
+                <span>:</span>
+                <div class="minute-input-container">
+                  <input class="form-control" type="number" value="00" id="mon-break-minute">
+                </div>
+              </div>
+            </td>
+            <td><label id="monday-total-hours">0:00</label></td>
+          </tr>
+
+          <!---------------------- TUESDAY ROW ------------------->
+          <tr>
+            <th scope="row">Tuesday</th>
+            <td>  
+              <input type="time" max="5:00" max="23:00" id="tue-start-time">
+            </td>
+            <td>  
+              <input type="time" max="5:00" max="23:00" id="tue-end-time">
+            </td>
+            <td>
+              <div class="break-container">
+                <div class="hour-input-container">
+                  <input class="form-control" type="number" value="00" id="tue-break-hour">
+                </div>
+                <span>:</span>
+                <div class="minute-input-container">
+                  <input class="form-control" type="number" value="00" id="tue-break-minute">
+                </div>
+              </div>
+            </td>
+            <td><label id="tuesday-total-hours">0:00</label></td>
+          </tr>
+
+          <!---------------------- WEDNESDAY ROW ------------------->
+          <tr>
+            <th scope="row">Wednesday</th>
+            <td>  
+              <input type="time" max="5:00" max="23:00" id="wed-start-time">
+            </td>
+            <td>  
+              <input type="time" max="5:00" max="23:00" id="wed-end-time">
+            </td>
+            <td>
+              <div class="break-container">
+                <div class="hour-input-container">
+                  <input class="form-control" type="number" value="00" id="wed-break-hour">
+                </div>
+                <span>:</span>
+                <div class="minute-input-container">
+                  <input class="form-control" type="number" value="00" id="wed-break-minute">
+                </div>
+              </div>
+            </td>
+            <td><label id="wednesday-total-hours">0:00</label></td>
+          </tr>
+
+          <!---------------------- THURSDAY ROW ------------------->
+          <tr>
+            <th scope="row">Thursday</th>
+            <td>  
+              <input type="time" max="5:00" max="23:00" id="thur-start-time">
+            </td>
+            <td>  
+              <input type="time" max="5:00" max="23:00" id="thur-end-time">
+            </td>
+            <td>
+              <div class="break-container">
+                <div class="hour-input-container">
+                  <input class="form-control" type="number" value="00" id="thur-break-hour">
+                </div>
+                <span>:</span>
+                <div class="minute-input-container">
+                  <input class="form-control" type="number" value="00" id="thur-break-minute">
+                </div>
+              </div>
+            </td>
+            <td><label id="thursday-total-hours">0:00</label></td>
+          </tr>
+
+          <!---------------------- FRIDAY ROW ------------------->
+          <tr>
+            <th scope="row">Friday</th>
+            <td>  
+              <input type="time" max="5:00" max="23:00" id="fri-start-time">
+            </td>
+            <td>  
+              <input type="time" max="5:00" max="23:00" id="fri-end-time">
+            </td>
+            <td>
+              <div class="break-container">
+                <div class="hour-input-container">
+                  <input class="form-control" type="number" value="00" id="fri-break-hour">
+                </div>
+                <span>:</span>
+                <div class="minute-input-container">
+                  <input class="form-control" type="number" value="00" id="fri-break-minute">
+                </div>
+              </div>
+            </td>
+            <td><label id="friday-total-hours">0:00</label></td>
+          </tr>
+
+          <!---------------------- SATURDAY ROW ------------------->
+          <tr>
+            <th scope="row">Saturday</th>
+            <td>  
+              <input type="time" max="5:00" max="23:00" id="sat-start-time">
+            </td>
+            <td>  
+              <input type="time" max="5:00" max="23:00" id="sat-end-time">
+            </td>
+            <td>
+              <div class="break-container">
+                <div class="hour-input-container">
+                  <input class="form-control" type="number" value="00" id="sat-break-hour">
+                </div>
+                <span>:</span>
+                <div class="minute-input-container">
+                  <input class="form-control" type="number" value="00" id="sat-break-minute">
+                </div>
+              </div>
+            </td>
+            <td><label id="saturday-total-hours">0:00</label></td>
+          </tr>
+
+          <!---------------------- SUNDAY ROW ------------------->
+          <tr>
+            <th scope="row">Sunday</th>
+            <td>  
+              <input type="time" max="5:00" max="23:00" id="sun-start-time">
+            </td>
+            <td>  
+              <input type="time" max="5:00" max="23:00" id="sun-end-time">
+            </td>
+            <td>
+              <div class="break-container">
+                <div class="hour-input-container">
+                  <input class="form-control" type="number" value="00" id="sun-break-hour">
+                </div>
+                <span>:</span>
+                <div class="minute-input-container">
+                  <input class="form-control" type="number" value="00" id="sun-break-minute">
+                </div>
+              </div>
+            </td>
+            <td><label id="sunday-total-hours">0:00</label></td>
+          </tr>
+
+          <!---------------------- CALCULATE TOTAL HOURS ROW ------------------->
+          <tr>
+            <td colspan="5" class="total-container">
+              <div class="calculate-buttons">
+                <button>Calculate Total Hours</button>
+                <button>Clear All Time Inputs</button>
+              </div>
+              <div class="total">Total Hours:</div>
+              <div id="calculated-hours">0.00</div>
+            </td>
+          </tr>
+
+          <!---------------------- CALCULAE TOTAL PAY ROW ------------------->
+          <tr>
+            <td colspan="5">
+              <div  class="pay-calc-container">
+                <div class="hourly-rate-input-container">
+                  <label>Hourly rate: </label>
+                  <input class="form-control" type="number" id="hourly-rate-input">
+                </div>
+                <button id="calc-total-pay-button">Calculate Total Pay</button>
+                <div class="total-pay-container">
+                  <label>Total Pay: </label>
+                  <input class="form-control" type="text" placeholder="$0:00" readonly id="total-pay-input">
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
