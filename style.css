@@ -32,15 +32,10 @@
 
 .calc-table-container {
   position: absolute;
-  top:0px;
+  top: -2px;
   right:0px;
   padding-right: 35px;
 }
-
-.pay-calc-table-row {
-  height: 10px;
-}
-
 
 
 /* --------------- Total Hours 0.00  --------------- */
@@ -58,6 +53,7 @@
 #calculated-hours {
   font-size: 1.2em;
   color: white;
+  padding-right: 12px;
 }
 
 

@@ -188,20 +188,29 @@
           <tr>
             <td colspan="5" class="total-container">
               <button id="clear-btn">Clear All</button>             <!-- clear time button  -->
+
               <div class="calc-table-container">
                 <table class="pay-calc-table">
+
+                  <!-- Total Hours Row-->
                   <tr class="pay-calc-table-row">
                     <td class="total">Total Hours:</td>
                     <td id="calculated-hours" align="right">0.00</td>                               <!-- total hours output -->
                   </tr>
+
+                  <!-- Hourly Rate Input Row -->
                   <tr class="pay-calc-table-row">
                     <td><label class="hourly-rate-label">Hourly rate: </label></td>
                     <td><input class="form-control" type="number" id="hourly-rate-input"></td>   <!-- hourly rate input -->
                   </tr>      
+
+                  <!-- Total Pay Out Row -->
                   <tr class="pay-calc-table-row"> 
                     <td><label class="total-pay-label">Total Pay: </label></td>
                     <td><input class="form-control" type="text" placeholder="$0.00" readonly id="total-pay-output"></td> <!-- total pay output-->
                   </tr>
+
+                  <!-- Calculate Button -->
                   <tr>
                     <td colspan="2">
                       <button id="calc-total-pay-button">Calculate Total Pay</button>       <!-- calc total pay button -->
@@ -209,6 +218,7 @@
                   </tr>
                 </table>
               </div>
+              
             </td>
           </tr>
         </tbody>
